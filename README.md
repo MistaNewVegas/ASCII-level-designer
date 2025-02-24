@@ -5,7 +5,7 @@ A grid-based level editor built with Rust and Egui.
 ## Download
 
 Get the latest release here:  
-[Download Level Editor](https://github.com/your-username/level-editor/releases)
+[Download Level Editor](https://github.com/MistaNewVegas/ASCII-level-designer/blob/main/Daniel's%20ASCII%20Level%20Editor.exe)
 
 ## Usage
 
