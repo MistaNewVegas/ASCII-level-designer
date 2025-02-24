@@ -28,5 +28,5 @@ Get the latest release here:
   - Click "Export to CSV" to save your level design as CSV files.
 
 ## Output
-![Output POC](output-poc.jpg)
+![Output POC](edit-poc.png)
 
