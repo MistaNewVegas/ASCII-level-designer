@@ -1,6 +1,14 @@
 # Level Editor
 
-A grid-based level editor built with Rust and Egui.
+Level Editor is a simple, grid-based level design tool built in Rust using Egui. It provides a visual interface to quickly design levels by painting directly on a grid, with options for walls, enemies, checkpoints, and more. Once your level is designed, you can export it as CSV files for integration with your game.
+
+| ASCII Symbol | Description          |
+|--------------|----------------------|
+| `#`          | Wall tile            |
+| `&`          | Enemy                |
+| `!`          | Checkpoint           |
+| `$`          | Fruit / Prize                |
+| (space)      | Empty / Cleared cell |
 
 ## Download
 
@@ -11,10 +19,14 @@ Get the latest release here:
 
 - **Run:**  
   - Execute via `cargo run --release`  
-  - Or run the built executable from `target/release/level-editor.exe`
+  - Or run the built executable from the link above
 - **Editing:**  
   - Use the toolbar to select a brush (Wall, Enemy, Checkpoint, Fruit, or Clear).
   - Left-click or drag over cells to paint.
-  - Shift + right-click clears a cell.
+  - [REMOVED] Shift + right-click clears a cell.
 - **Export:**  
   - Click "Export to CSV" to save your level design as CSV files.
+
+## Output
+![Output POC](output-poc.jpg)
+
