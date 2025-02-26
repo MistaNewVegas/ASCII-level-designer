@@ -80,7 +80,7 @@ impl eframe::App for App {
         // Top toolbar with title, export button, and brush selection.
         egui::TopBottomPanel::top("toolbar").show(ctx, |ui| {
             ui.horizontal_centered(|ui| {
-                ui.heading("GLOCAL Level Editor  ");
+                ui.heading("Daniel's ASCII Level Editor  ");
                 if ui.button(" Export to CSV ").clicked() {
                     self.editor.export_to_csv().unwrap();
                 }
@@ -92,31 +92,31 @@ impl eframe::App for App {
                     ui.label("Brush:");
                     if ui.selectable_label(
                         self.current_brush == Brush::Wall,
-                        egui::RichText::new("Wall").underline()
+                        egui::RichText::new("Wall # ").underline()
                     ).clicked() {
                         self.current_brush = Brush::Wall;
                     }
                     if ui.selectable_label(
                         self.current_brush == Brush::Enemy,
-                        egui::RichText::new("Enemy").underline()
+                        egui::RichText::new("Enemy @ ").underline()
                     ).clicked() {
                         self.current_brush = Brush::Enemy;
                     }
                     if ui.selectable_label(
                         self.current_brush == Brush::Checkpoint,
-                        egui::RichText::new("Checkpoint").underline()
+                        egui::RichText::new("Checkpoint ! ").underline()
                     ).clicked() {
                         self.current_brush = Brush::Checkpoint;
                     }
                     if ui.selectable_label(
                         self.current_brush == Brush::Fruit,
-                        egui::RichText::new("Fruit").underline()
+                        egui::RichText::new("Fruit $ ").underline()
                     ).clicked() {
                         self.current_brush = Brush::Fruit;
                     }
                     if ui.selectable_label(
                         self.current_brush == Brush::Clear,
-                        egui::RichText::new("Clear").underline()
+                        egui::RichText::new("Clear ").underline()
                     ).clicked() {
                         self.current_brush = Brush::Clear;
                     }
@@ -263,7 +263,7 @@ impl eframe::App for App {
     }
 }
 
-// Function to load the icon (daniel.ico) using the image crate.
+// load icon
 fn load_icon() -> Option<IconData> {
     let icon_bytes = include_bytes!("daniel.ico");
     let image = image::load_from_memory(icon_bytes).ok()?.to_rgba8();
@@ -279,19 +279,26 @@ fn main() -> eframe::Result<()> {
     let editor = LevelEditor::new(DEFAULT_SIZE, DEFAULT_SIZE);
     let editor_arc = Arc::new(editor);
 
-    // Compute grid dimensions with margin.
     let grid_width = DEFAULT_SIZE as f32 * CELL_SIZE + GRID_MARGIN;
     let grid_height = DEFAULT_SIZE as f32 * CELL_SIZE + GRID_MARGIN;
+    
     let toolbar_height = 40.0;
+    let instructions_height = 30.0;
+
     let window_width = grid_width;
-    let window_height = grid_height + toolbar_height;
+    let window_height = grid_height + toolbar_height + instructions_height;
 
     let native_options = eframe::NativeOptions {
         initial_window_size: Some(egui::vec2(window_width, window_height)),
-        initial_window_pos: Some(egui::Pos2::new(0.0, 0.0)),
-        icon_data: load_icon(), // Set the icon from daniel.ico
+        resizable: false,
+        initial_window_pos: Some(egui::Pos2::new(100.0, 100.0)),
+        icon_data: load_icon(), 
         ..Default::default()
     };
 
-    eframe::run_native("Daniel's ASCII Level Editor v1.0", native_options, Box::new(|_cc| Box::new(App::new(editor_arc))))
+    eframe::run_native(
+        "Daniel's ASCII Level Editor v1.0",
+        native_options,
+        Box::new(|_cc| Box::new(App::new(editor_arc))),
+    )
 }

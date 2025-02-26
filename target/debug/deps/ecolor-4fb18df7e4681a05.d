@@ -1,0 +1,11 @@
+C:\Users\danie\Documents\My Games\ASCII-level-designer\target\debug\deps\libecolor-4fb18df7e4681a05.rmeta: C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\lib.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\color32.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\hsva_gamma.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\hsva.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\rgba.rs
+
+C:\Users\danie\Documents\My Games\ASCII-level-designer\target\debug\deps\libecolor-4fb18df7e4681a05.rlib: C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\lib.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\color32.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\hsva_gamma.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\hsva.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\rgba.rs
+
+C:\Users\danie\Documents\My Games\ASCII-level-designer\target\debug\deps\ecolor-4fb18df7e4681a05.d: C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\lib.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\color32.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\hsva_gamma.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\hsva.rs C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\rgba.rs
+
+C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\lib.rs:
+C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\color32.rs:
+C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\hsva_gamma.rs:
+C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\hsva.rs:
+C:\Users\danie\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ecolor-0.22.0\src\rgba.rs:

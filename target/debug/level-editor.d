@@ -1,0 +1,1 @@
+C:\Users\danie\Documents\My\ Games\ASCII-level-designer\target\debug\level-editor.exe: C:\Users\danie\Documents\My\ Games\ASCII-level-designer\build.rs C:\Users\danie\Documents\My\ Games\ASCII-level-designer\src\daniel.ico C:\Users\danie\Documents\My\ Games\ASCII-level-designer\src\main.rs
