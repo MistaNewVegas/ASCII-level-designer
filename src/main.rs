@@ -222,7 +222,7 @@ impl eframe::App for App {
                 }
             }
 
-            // --- Also Allow Individual Cell Clicking ---
+
             for y in 0..DEFAULT_SIZE {
                 for x in 0..DEFAULT_SIZE {
                     let cell_x = grid_rect.min.x + offset + x as f32 * CELL_SIZE;
